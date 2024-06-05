@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Poppins;
+    font-weight: 400;
+    src: url("./fonts/Poppins/Poppins-Regular.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: Poppins;
+    font-weight: 700;
+    src: url("./fonts/Poppins/Poppins-Bold.ttf") format("opentype");
+  }
+}
+
+:root {
+  --app-height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  height: var(--app-height);
+  font-family: Poppins, sans-serif;
+  color: #3e3e4a;
+  font-size: 15px;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+}
+
+body * {
+  @apply transition-colors duration-200;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+main {
+  flex: 1;
+}
