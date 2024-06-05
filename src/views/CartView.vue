@@ -14,7 +14,7 @@
           @click="finishOrder"
           class="ml-6 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-4 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
         >
-          Place order
+          Заказать
         </button>
       </div>
 
@@ -42,7 +42,7 @@
         />
       </svg>
       <span class="sr-only">Info</span>
-      <div><span class="font-medium">Congratulations!</span> You have placed your order.</div>
+      <div><span class="font-medium">Поздравляем вас!</span> Заказ размещен.</div>
     </div>
   </div>
 </template>
